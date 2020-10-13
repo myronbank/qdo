@@ -16,7 +16,7 @@ dotenv.config();
 
 const mongodbUrl = config.MONGODB_URL;
 
-mongoose.connect("mongodb://localhost/shopping-site", {
+mongoose.connect(mongodbUrl, {
   useNewUrlParser: true
 })
   .then(() => console.log('connected to MongoDB...'))
