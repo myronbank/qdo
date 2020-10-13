@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
-import { deleteStock } from "../actions/productActions";
+import { deleteStock, listProducts } from "../actions/productActions";
+import { getStockList } from "../service/stockService";
+import { useState } from 'react';
 
 const TableContent = ({ obj, onClick, displayAll }) => {
-  const productList = useSelector(state => state.productList);
+  let productList = useSelector(state => state.productList);
   const { products, loading, error } = productList;
   const dispatch = useDispatch();
 
@@ -11,13 +13,16 @@ const TableContent = ({ obj, onClick, displayAll }) => {
     dispatch(deleteStock(object._id));
   }
 
+  // useEffect(() => {
+  //   dispatch(listProducts());
+  // })
 
   return (
     loading ? <td>Loading...</td> :
       error ? <td>{error}</td> :
 
         <tbody>
-          {productList && products.map((o, index) =>
+          {false && products.map((o, index) =>
             <tr key={index}>
               {/* <tr key={o._id} className={displayAll ? null : "shortlisted-display"}> */}
               <td>

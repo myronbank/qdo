@@ -137,7 +137,7 @@ class StockScreen extends Form {
             <button className="button" onClick={this.closeForm}>Back</button>
           </form>
         </div>}
-        {products &&
+        {false &&
           <Table obj={products} titles={Object.keys(this.schemaRule)} onClick={this.openForm} />
         }
       </div>
