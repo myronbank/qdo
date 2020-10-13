@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "564b26f84d253c672c872f57cec258a2",
+    "revision": "f659e4fb0b712a3100dc28a135ff1b9e",
     "url": "/index.html"
   },
   {
-    "revision": "3761174e556ac0b157c0",
+    "revision": "c9b701d24c245aaf8a13",
     "url": "/static/css/main.0ca8112f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.82d010cd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3761174e556ac0b157c0",
-    "url": "/static/js/main.1307c79a.chunk.js"
+    "revision": "c9b701d24c245aaf8a13",
+    "url": "/static/js/main.e7aa0625.chunk.js"
   },
   {
     "revision": "976bc2dd75b6c4282e2e",
@@ -36,7 +36,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/DSCF8602_edited.0a451853.jpg"
   },
   {
-    "revision": "0631e90f7c090b0bcb8f144185a7a9ed",
-    "url": "/static/media/truck.0631e90f.svg"
+    "revision": "c8c176991b8a5da6e2d1bcf1611485df",
+    "url": "/static/media/truck.c8c17699.svg"
   }
 ]);
